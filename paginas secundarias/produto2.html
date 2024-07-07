@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izabel | loja online Bolsa Feminino e Masculino</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens e icones/Z.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2fd24895a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+header {
+    background-color: #fcfcfc; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 0; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+header .up{
+    font-size: 30px;
+    color: #000000;
+}
+h1,input{
+    display: inline;
+    color: black;
+}
+header li{
+    display: inline;
+    margin: 3px;
+}
+
+header input{
+    align-items: center;
+    display: inline;
+    padding: 10px;
+    width: 30rem;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+}
+header nav{
+    background-color: white;
+}
+header a{
+    color: rgb(97, 97, 97);
+    margin: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header a:hover{
+    transition: 0.5s;
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+header button{
+    padding: 12px;
+}
+header button img{
+  height: 15px;
+}
+h1{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.719);
+    font-size: 50px;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+.layout{
+    background-color:bisque;
+    padding: 10px;
+    color: #000000;
+  
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.produto .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.produto .produto-img img {
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.produto .mostra img{
+    height: 150px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    transition: 0.5s;
+}
+.produto .mostra img:hover{
+    transition: 0.5s;
+    height: 170px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.445);
+}
+
+.produto .produto-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.produto .produto-info h2 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.produto .produto-info .descricao {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.produto .produto-info .preco {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.produto .produto-info button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto .produto-info button:hover {
+    background-color: #555;
+}
+
+.layout p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header .dropdown button{
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+}
+.dropdown {
+    
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.informacoes p{
+    display: inline;
+    margin: 20px;
+    font-size: 25px;
+}
+.iconesdeContato{
+    font-size: 35px;
+    display: inline-flex;
+}
+.iconesdeContato li{
+    margin: 14px;
+    
+}
+.iconesdeContato a{
+    transition: 0.4s;
+}
+.iconesdeContato .facebook:hover{
+    color: blue;
+    font-size: 40px;
+    transition: 0.4s;
+}
+.iconesdeContato .instagram:hover{
+    color: rgb(255, 0, 43);
+    font-size: 40px;
+    transition: 0.4s;
+}
+.iconesdeContato .whatsapp:hover{
+    color: rgb(9, 255, 0);
+    font-size: 40px;
+    transition: 0.4s;
+}
+.iconesdeContato .github:hover{
+    color: rgb(36, 36, 36);
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Espaço entre os itens - ajuste conforme necessário */
+}
+
+.nav ul li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav ul li img {
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+    height: 250px; /* Largura da imagem - ajuste conforme necessário */
+}
+.nav ul li img:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 12px;
+}
+
+.nav ul li p {
+    margin: 5px 0 0; /* Margem superior para o texto */
+    font-size: 30px; /* Tamanho da fonte - ajuste conforme necessário */
+}
+
+
+
+/* Estilização básica para o dropdown */
+ header .contato img:hover{
+    border-radius: 50px;
+    box-shadow: 0 0 20px black;
+    transition: 0.3s;
+
+}
+
+h3,h4{
+    font-size: 30px;
+    color: #686767;
+}
+
+footer .Pagamentos{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+footer .Pagamentos img{
+    margin: 10px;
+}
+
+footer .content {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    box-shadow: 0 0 10px black;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    color: #000000;
+    border-bottom: 1px solid #888;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+.mobile{
+    display: none;
+}
+.pc{
+    display: block;
+}
+@media (max-width: 768px) {
+     .produto-img .mostra img{
+        display: inline;
+        height: 130px;
+     }
+    
+     .pc{
+        display: none;
+     }
+     .mobile{
+        display: block;
+     }
+}
+    </style>
+    <header>
+        <div class="layout">
+            <p>Descubra o seu acessório perfeito e leve consigo um pedaço de elegância para todas as ocasiões.</p> 
+        </div>
+        <br>
+        <h1>Izabel</h1> 
+      <br>
+      <div class="buscar">
+      <input type="search" name="" id="" placeholder="Pesquisar..."><button><i class="fa-solid fa-magnifying-glass"></i></button><br>
+      </div>
+      <br><br>
+      <nav class="pc">
+        <ul>
+      <li><a href="http://127.0.0.1:5500/#">Home</a></li>
+      <li><a href="#fim">Iformações</a></li>
+      <li><a href="#nav">Categorias</a></li>
+      <li><a href="#nav">Produtos</a></li>
+      <a href="https://rastreamento.correios.com.br/app/index.php"><i class="fa-solid fa-plane"></i> Rastrear seu Pedido</a>
+      <div class="dropdown">
+        <button class="dropbtn">Cadastro/Login</button>
+        <div class="dropdown-content">
+            <a href="paginas secundarias/Cadastro.html">Cadastro</a>
+            <a href="paginas secundarias/Login.html">Login</a>
+        </div>
+    </div>
+       </ul>
+     </nav>  
+      
+
+      <nav class="mobile">
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i> Menu</button>
+            <div class="dropdown-content">
+                <a href="paginas secundarias/Cadastro.html">Cadastro</a>
+                <a href="paginas secundarias/Login.html">Login</a>
+                <a href="http://127.0.0.1:5500/#">Home</a>
+                 <a href="#fim">Iformações</a>
+                <a href="#nav">Categorias</a>
+               <a href="#nav">Produtos</a>
+               <a href="https://rastreamento.correios.com.br/app/index.php"><i class="fa-solid fa-plane"></i> Rastrear seu Pedido</a>
+            </div>
+       </nav>  
+    </header><br>
+    <br>
+    <main>
+            <section class="produto">
+                <div class="container">
+                    <div class="produto-img">
+                        <img src="imagens de produtos/Design sem nome(7)2.png" alt="Nome do Produto">
+                        <div class="mostra">
+                        <img src="imagens de produtos/Design sem nome(9) (2).png" alt="">
+                        <img src="imagens de produtos/Design sem nome(11).png" alt="">
+                        <img src="imagens de produtos/Design sem nome(8)3.png" alt="">
+                        </div>                    
+                    </div>
+                    <div class="produto-info">
+                        <h2>Mochila Masculina Preto e Vermelho</h2>
+                        <p class="preco">R$ 100</p>
+                        <script class="ymp-script" src="https://api.yampi.io/v2/izabel2/public/buy-button/8AJH356RDH/js"></script>
+                        <p class="descricao">
+                           <strong>Mochila Masculina Preta e Vermelha Explore</strong> o estilo urbano e a funcionalidade prática com nossa mochila masculina preta e vermelha. Ideal para o dia a dia na cidade ou em viagens, esta mochila combina um design moderno com materiais duráveis.
+                        </p>
+                        
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div class="footer-links" id="fim">
+            <div class="footer-section">
+                <h3>Informações ao Cliente</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Política de Trocas</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <h1>Izabel</h1>
+            <div class="footer-section">
+                <h3>Formas de Contato</h3>
+                <ul>
+                    <li>E-mail: <a href="mailto:wwfome6@gmail.com">IzabelLoja@gmail.com</a></li>
+                    <li>Telefone: (81) 98909-6332 </li>
+                    <div class="iconesdeContato">
+                    <li><a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5581989096332&amp;text=Ol%C3%A1%20Preciso%20de%20ajuda!!" ,="" call_to_action="Fale conosco!" class="whatsapp" ><i class="fa-brands fa-whatsapp"></i></i></a></li>
+                    <li><a href="" class="instagram" ><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" class="github"><i class="fa-brands fa-github"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: rgb(95, 95, 95);">&copy; 2024 Izabel. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="Pagamentos">
+            <img src="https://icons.yampi.me/svg/card-pix.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-hiper.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-billet.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-elo.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-hipercard.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-aura.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-discover.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-mastercard.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-diners.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-visa.svg" alt="">
+            <img src="https://icons.yampi.me/svg/card-amex.svg" alt="">
+        </div>
+    </footer>
+    <!--Fim do Rodapé-->
+<script src="script/script.js"></script>
+
+</body>
+</html>

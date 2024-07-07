@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izabel | pagina de Login </title>
+    <script src="https://kit.fontawesome.com/2fd24895a9.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh; /* Definir altura total da tela */
+            display: flex;
+            justify-content: center; /* Centralizar no eixo horizontal */
+            align-items: center; /* Centralizar no eixo vertical */
+            background-color: #f0f0f0; /* Cor de fundo para visualização */
+        }
+        .pagina-login {
+            box-shadow: 0 0 15px;
+            border-radius: 15px;
+            padding: 50px 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        .conteiner {
+            margin-top: 20px; /* Espaçamento do topo */
+        }
+        form {
+            display: flex;
+            flex-direction: column; /* Empilhar os elementos verticalmente */
+            align-items: center; /* Centralizar os itens horizontalmente */
+        }
+         input, button {
+            margin-bottom: 10px; /* Espaçamento entre os elementos */
+        }
+        .pagina-login img{
+            margin-left: 135px;
+        }
+        input{
+            font-size: 20px;
+            padding: 10px 100px;
+        }
+        button{
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 20px 100px;
+            transition: 0.4s;
+        }
+        button:hover{
+            transition: 0.4s;
+            background-color: rgb(61, 61, 61);
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        label{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagina-login">
+        <img src="imagens de produtos/Captura de tela de 2024-07-03 22-02-32.png" alt="">
+        <div class="conteiner">
+            <form action="">
+                <label for=""><i class="fa-solid fa-user"></i> E-mail ou Nome de Usuário</label>
+                <input type="text" placeholder="Exemplo@izabel.com ou Izabel" id="login" required>
+                <label for=""><i class="fa-solid fa-lock"></i> Sua Senha</label>
+                <input type="password" placeholder="MinhaSenha123456@#" id="senha" required>
+                <button onclick="logar(); return false">Entrar ></button>
+                <a href="#">Esqueci minha senha!</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        
+        function logar(){ 
+        let login = document.getElementById("login")
+        let senha = document.getElementById("senha")
+        if(login == "Admin" && senha == "Admin"){
+            alert('Formulario valido')
+            location.href = "http://127.0.0.1:5500/#";
+        }else{
+            alert('erro no cadastro')
+        }
+    }   
+         
+    </script>
+</body>
+</html>
